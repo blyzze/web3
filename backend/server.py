@@ -33,12 +33,12 @@ class QuoteRequest(BaseModel):
     timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 class QuoteRequestCreate(BaseModel):
-    name: str
-    email: str
-    phone: str
+    name: str = Field(..., min_length=1)
+    email: str = Field(..., pattern=r'^[^@\s]+@[^@\s]+\.[^@\s]+$')
+    phone: str = Field(..., min_length=1)
     company: Optional[str] = ""
     product_interest: Optional[str] = ""
-    message: str
+    message: str = Field(..., min_length=1)
 
 class ContactMessage(BaseModel):
     model_config = ConfigDict(extra="ignore")
