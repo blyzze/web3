@@ -6,67 +6,112 @@ import os
 import logging
 from pathlib import Path
 from pydantic import BaseModel, Field, ConfigDict
-from typing import List
+from typing import List, Optional
 import uuid
 from datetime import datetime, timezone
-
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
-# MongoDB connection
 mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
-# Create the main app without a prefix
 app = FastAPI()
-
-# Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
 
-
-# Define Models
-class StatusCheck(BaseModel):
-    model_config = ConfigDict(extra="ignore")  # Ignore MongoDB's _id field
-    
+# Models
+class QuoteRequest(BaseModel):
+    model_config = ConfigDict(extra="ignore")
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
-    client_name: str
+    name: str
+    email: str
+    phone: str
+    company: Optional[str] = ""
+    product_interest: Optional[str] = ""
+    message: str
     timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
-class StatusCheckCreate(BaseModel):
-    client_name: str
+class QuoteRequestCreate(BaseModel):
+    name: str
+    email: str
+    phone: str
+    company: Optional[str] = ""
+    product_interest: Optional[str] = ""
+    message: str
 
-# Add your routes to the router instead of directly to app
+class ContactMessage(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    email: str
+    subject: str
+    message: str
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+class ContactMessageCreate(BaseModel):
+    name: str
+    email: str
+    subject: str
+    message: str
+
+# Routes
 @api_router.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Mestar API Running"}
 
-@api_router.post("/status", response_model=StatusCheck)
-async def create_status_check(input: StatusCheckCreate):
-    status_dict = input.model_dump()
-    status_obj = StatusCheck(**status_dict)
-    
-    # Convert to dict and serialize datetime to ISO string for MongoDB
-    doc = status_obj.model_dump()
+@api_router.post("/quote")
+async def create_quote(input_data: QuoteRequestCreate):
+    quote_obj = QuoteRequest(**input_data.model_dump())
+    doc = quote_obj.model_dump()
     doc['timestamp'] = doc['timestamp'].isoformat()
-    
-    _ = await db.status_checks.insert_one(doc)
-    return status_obj
+    await db.quotes.insert_one(doc)
+    return {"success": True, "id": quote_obj.id, "message": "Quote request received"}
 
-@api_router.get("/status", response_model=List[StatusCheck])
-async def get_status_checks():
-    # Exclude MongoDB's _id field from the query results
-    status_checks = await db.status_checks.find({}, {"_id": 0}).to_list(1000)
-    
-    # Convert ISO string timestamps back to datetime objects
-    for check in status_checks:
-        if isinstance(check['timestamp'], str):
-            check['timestamp'] = datetime.fromisoformat(check['timestamp'])
-    
-    return status_checks
+@api_router.get("/quotes")
+async def get_quotes():
+    quotes = await db.quotes.find({}, {"_id": 0}).to_list(1000)
+    return quotes
 
-# Include the router in the main app
+@api_router.post("/contact")
+async def create_contact(input_data: ContactMessageCreate):
+    contact_obj = ContactMessage(**input_data.model_dump())
+    doc = contact_obj.model_dump()
+    doc['timestamp'] = doc['timestamp'].isoformat()
+    await db.contacts.insert_one(doc)
+    return {"success": True, "id": contact_obj.id, "message": "Message received"}
+
+@api_router.get("/products")
+async def get_products():
+    return {
+        "categories": [
+            {
+                "id": "soil-preparation",
+                "name_tr": "Toprak Hazırlama Ekipmanları",
+                "name_en": "Soil Preparation Equipment",
+                "products": ["HT475", "SPIDER275", "SPIDER475"]
+            },
+            {
+                "id": "potato-planters",
+                "name_tr": "Patates Dikim Makineleri",
+                "name_en": "Potato Planters",
+                "products": ["ALPHA275", "ALPHA475", "PDO-2N", "PDO-2F", "PDO-4N"]
+            },
+            {
+                "id": "potato-harvesters",
+                "name_tr": "Patates Söküm Makineleri",
+                "name_en": "Potato Harvesters",
+                "products": ["ULTRA275", "ULTRA475", "PSH-2S"]
+            },
+            {
+                "id": "onion-harvesters",
+                "name_tr": "Soğan Söküm Makineleri",
+                "name_en": "Onion Harvesters",
+                "products": ["SSM-1400"]
+            }
+        ]
+    }
+
 app.include_router(api_router)
 
 app.add_middleware(
@@ -77,7 +122,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
