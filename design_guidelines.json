@@ -1,0 +1,110 @@
+{
+  "theme": "dark",
+  "archetype": "4 (Swiss & High-Contrast - Industrial Variant)",
+  "vibe": "Industrial, Powerful, Engineered, Trustworthy",
+  "colors": {
+    "primary": "#FF6200",
+    "primary_hover": "#E65800",
+    "background": "#0A0A0A",
+    "surface": "#141414",
+    "surface_hover": "#1A1A1A",
+    "text_primary": "#F5F5F5",
+    "text_secondary": "#A1A1AA",
+    "border": "#27272A",
+    "accent_subtle": "rgba(255, 98, 0, 0.1)"
+  },
+  "typography": {
+    "heading_font": "Barlow Condensed",
+    "body_font": "IBM Plex Sans",
+    "scale": {
+      "h1": "text-5xl md:text-6xl lg:text-7xl uppercase tracking-tighter font-black",
+      "h2": "text-4xl md:text-5xl uppercase tracking-tight font-bold",
+      "h3": "text-2xl md:text-3xl tracking-tight font-semibold",
+      "body": "text-base md:text-lg leading-relaxed text-zinc-400",
+      "overline": "text-sm uppercase tracking-[0.2em] text-[#FF6200] font-bold"
+    }
+  },
+  "layout": {
+    "spacing": "Generous (p-8 to p-24) within sections, combined with strict visible grid borders.",
+    "border_strategy": "Grid Borders (Technical Look) - Use visible border-r and border-b in dark mode (border-zinc-800) to create a blueprint/schematic feel suitable for heavy machinery.",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "bento_grid": "Used for product categories. grid-cols-1 md:grid-cols-12 gap-6."
+  },
+  "components": {
+    "navigation": {
+      "style": "Solid Background",
+      "classes": "fixed w-full top-0 z-50 bg-[#0A0A0A] border-b border-zinc-800",
+      "features": ["Logo", "TR/EN Language Dropdown (Shadcn)", "Links (Home, About, Products, Media)", "Quote Button (Primary color)"]
+    },
+    "hero_slider": {
+      "overlay": "bg-black/50 to ensure text contrast",
+      "text_alignment": "Left-aligned optical balance",
+      "features": ["Framer Motion staggered text", "Background image crossfade (slider)", "Large primary CTA 'GET A QUOTE'"]
+    },
+    "about_section": {
+      "layout": "Asymmetrical grid (col-span-5 for text, col-span-7 for images)",
+      "features": ["Statistics counters (Years of Experience, Countries Exported To, etc.)", "Marquee of the tagline: 'Daha iyisini hedefledik, en iyisini ürettik'"]
+    },
+    "products_grid": {
+      "style": "Flat cards with 1px border. No soft shadows. Brutalist.",
+      "hover_effect": "border-[#FF6200] and image scale up slightly. -translate-y-1.",
+      "categories": [
+        "Soil Preparation Equipment (HT475, SPIDER275/475)",
+        "Potato Planters (ALPHA 275/475, PDO-2N/2F/4N)",
+        "Potato Harvesters (ULTRA275/475, PSH-2S)",
+        "Onion Harvester (SSM-1400)"
+      ]
+    },
+    "quote_form": {
+      "style": "Shadcn Form elements heavily customized. Flat surfaces, square corners or very slight radius (rounded-sm).",
+      "focus_state": "focus:ring-2 focus:ring-[#FF6200] focus:border-transparent"
+    }
+  },
+  "media": {
+    "hero_slider": [
+      {
+        "url": "https://images.pexels.com/photos/1719669/pexels-photo-1719669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Red tractor plowing field under sunset - Hero Image 1"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1706862609885-7771b001daa2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHw0fHx0cmFjdG9yJTIwZmllbGQlMjBzdW5zZXR8ZW58MHx8fHwxNzc0NTY2ODQ2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Tractor driving through field at sunset - Hero Image 2"
+      }
+    ],
+    "about_texture": [
+      {
+        "url": "https://images.pexels.com/photos/1000057/pexels-photo-1000057.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Freshly plowed farmland (Use as low-opacity background texture in About or Stats section)"
+      }
+    ],
+    "product_categories": [
+      {
+        "url": "https://images.unsplash.com/photo-1643456457241-745a30930c17?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Aerial view of tractor - Use for Soil Preparation category"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1594771804886-a933bb2d609b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwyfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Tractor on brown grass - Use for Harvesters category"
+      }
+    ]
+  },
+  "animations": {
+    "library": "framer-motion",
+    "scroll": "lenis for smooth scrolling momentum",
+    "marquee": "react-fast-marquee for taglines/brands",
+    "micro_interactions": "Button hover fills, card border reveals. Avoid bouncy/playful animations. Use sharp, fast easings (e.g. [0.22, 1, 0.36, 1]) for an engineered feel."
+  },
+  "testing": {
+    "attributes": "All interactive elements MUST have data-testid attributes."
+  },
+  "instructions_to_main_agent": [
+    "Strictly adhere to the dark theme and #FF6200 orange accent. Do not introduce standard blue or purple colors.",
+    "Use pure HTML/Tailwind for the marketing layout, avoiding Shadcn generic layout components, but use Shadcn for Form, Select (language dropdown), and Inputs.",
+    "Implement bilingual support (TR/EN) using a React context or simple state dictionary for this MVP.",
+    "Apply 'Barlow Condensed' for all H1/H2 headings in uppercase to achieve the heavy industrial look. Install it via Google Fonts.",
+    "For the hero section, use the provided sunset tractor images with a heavy bg-black/50 overlay to ensure the white and orange text is perfectly legible.",
+    "Use a bento-style asymmetrical grid for the products section, applying a 1px border (#27272A) on cards instead of soft shadows.",
+    "Never use placeholder images; rely strictly on the media URLs provided in this JSON.",
+    "Include a 'react-fast-marquee' section displaying the bilingual tagline: 'Daha iyisini hedefledik, en iyisini ürettik / We aimed for better, and produced the best'"
+  ]
+}
