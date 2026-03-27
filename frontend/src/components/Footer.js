@@ -15,12 +15,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="mb-6">
-              <span className="font-barlow text-3xl font-black uppercase tracking-tighter text-white">
-                MESTAR
-              </span>
-              <p className="text-xs uppercase tracking-[0.3em] text-[#FF6200] font-semibold mt-1">
-                Agricultural Equipment
-              </p>
+              <img
+                src="https://customer-assets.emergentagent.com/job_doc-site-3/artifacts/bk291rdd_image.png"
+                alt="Mestar Logo"
+                className="h-16 w-auto object-contain"
+              />
             </div>
             <p className="text-sm text-zinc-400 font-ibm leading-relaxed">
               {t.footer.tagline}

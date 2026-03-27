@@ -4,6 +4,8 @@ export const products = {
     name: "HT475",
     subtitle_tr: "Dört Sıralı Preparatör",
     subtitle_en: "Four Rows Preparator",
+    description_tr: "HT475, ekim öncesi toprağı hazırlamak için tasarlanmış güçlü bir preparatördür. HARDOX kalitesinde bıçakları ile sertleşmiş toprak ve topakları kolayca parçalar, toprak havalandırmasını artırarak bitkilerin su ve mineral alımını iyileştirir.",
+    description_en: "The HT475 is a powerful preparator designed for pre-planting soil preparation. With HARDOX quality blades, it easily breaks down hardened soil and clods, enhancing soil aeration to improve water and mineral uptake for plants.",
     category: "soil-preparation",
     image: "https://images.unsplash.com/photo-1643456457241-745a30930c17?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
     specs: {
@@ -34,6 +36,8 @@ export const products = {
     name: "SPIDER 275",
     subtitle_tr: "İki Sıralı Mekanik Çapa Makinesi",
     subtitle_en: "Double Rows Mechanical Hoeing Machine",
+    description_tr: "SPIDER 275, patates bitkilerinin dibini işleyerek minerallerin dağıtımını sağlayan kompakt ve dayanıklı bir mekanik çapa makinesidir. Ekim öncesi karık oluşturmada da kullanılabilir.",
+    description_en: "The SPIDER 275 is a compact and durable mechanical hoeing machine that cultivates the base of potato plants to ensure mineral distribution. It can also be used for creating furrows before planting.",
     category: "soil-preparation",
     image: "https://images.unsplash.com/photo-1643456457241-745a30930c17?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
     specs: {
@@ -61,6 +65,8 @@ export const products = {
     name: "SPIDER 475",
     subtitle_tr: "Dört Sıralı Mekanik Çapa Makinesi",
     subtitle_en: "Four Rows Mechanical Hoeing Machine",
+    description_tr: "SPIDER 475, 4 sıralı yüksek kapasiteli çalışma imkanı sunan güçlü bir mekanik çapa makinesidir. Geniş alan çalışmaları için ideal olup, verimli mineral dağıtımı sağlar.",
+    description_en: "The SPIDER 475 is a powerful mechanical hoeing machine offering 4-row high capacity operation. Ideal for large field operations, it ensures efficient mineral distribution.",
     category: "soil-preparation",
     image: "https://images.unsplash.com/photo-1643456457241-745a30930c17?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
     specs: {
@@ -88,6 +94,8 @@ export const products = {
     name: "ALPHA 275",
     subtitle_tr: "İki Sıralı Tam Otomatik Patates Dikim Makinesi",
     subtitle_en: "Double Rows Full Automatic Potato Planter",
+    description_tr: "ALPHA 275, insan gücü olmadan dikim yapabilen tam otomatik bir patates dikim makinesidir. Isıl işlem görmüş bıçaklar ve 1000 kg kapasiteli hidrolik hazne ile yüksek verimlilik sunar.",
+    description_en: "The ALPHA 275 is a full automatic potato planter that plants without human power. With heat-treated blades and a 1000 kg capacity hydraulic hopper, it delivers high efficiency.",
     category: "potato-planters",
     image: "https://images.pexels.com/photos/4553070/pexels-photo-4553070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     specs: {
@@ -119,6 +127,8 @@ export const products = {
     name: "ALPHA 475",
     subtitle_tr: "Dört Sıralı Tam Otomatik Patates Dikim Makinesi",
     subtitle_en: "Four Rows Full Automatic Potato Planter",
+    description_tr: "ALPHA 475, geniş alanlar için tasarlanmış 4 sıralı tam otomatik patates dikim makinesidir. 1800 kg kapasiteli hidrolik hazne ve yüksek verimlilik ile düşük iş gücü maliyeti sağlar.",
+    description_en: "The ALPHA 475 is a 4-row full automatic potato planter designed for large areas. With an 1800 kg capacity hydraulic hopper, it provides high efficiency and low labor cost.",
     category: "potato-planters",
     image: "https://images.pexels.com/photos/4553070/pexels-photo-4553070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     specs: {
@@ -150,6 +160,8 @@ export const products = {
     name: "PDO-2N",
     subtitle_tr: "İki Sıralı Yarı Otomatik Patates Dikim Makinesi",
     subtitle_en: "Double Rows Semi-Automatic Potato Planter",
+    description_tr: "PDO-2N, küçük çiftçiler ve engebeli araziler için uygun, ekonomik bir yarı otomatik patates dikim makinesidir. Isıl işlem görmüş bıçakları ile dayanıklı ve güvenilir performans sunar.",
+    description_en: "The PDO-2N is an economical semi-automatic potato planter suitable for small farmers and hilly fields. With heat-treated blades, it offers durable and reliable performance.",
     category: "potato-planters",
     image: "https://images.pexels.com/photos/4553070/pexels-photo-4553070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     specs: {
@@ -179,6 +191,8 @@ export const products = {
     name: "PDO-2F",
     subtitle_tr: "İki Sıralı Gübreli Yarı Otomatik Patates Dikim Makinesi",
     subtitle_en: "Double Rows Semi-Automatic Potato Planter with Fertilizer",
+    description_tr: "PDO-2F, entegre gübre seçeneği sunan yarı otomatik bir patates dikim makinesidir. Dekar başına 50 kg'a kadar gübre ayarı yapılabilir. Küçük çiftçiler için idealdir.",
+    description_en: "The PDO-2F is a semi-automatic potato planter with an integrated fertilizer option. Fertilizer can be set up to 50 kg per decare. Ideal for small farmers.",
     category: "potato-planters",
     image: "https://images.pexels.com/photos/4553070/pexels-photo-4553070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     specs: {
@@ -209,6 +223,8 @@ export const products = {
     name: "PDO-4N",
     subtitle_tr: "Dört Sıralı Yarı Otomatik Patates Dikim Makinesi",
     subtitle_en: "Four Rows Semi-Automatic Potato Planter",
+    description_tr: "PDO-4N, orta ölçekli çiftlikler için tasarlanmış 4 sıralı yarı otomatik patates dikim makinesidir. 1300 kg kapasiteli hazne ile yüksek kapasiteli dikim sağlar.",
+    description_en: "The PDO-4N is a 4-row semi-automatic potato planter designed for medium-sized farms. With a 1300 kg capacity hopper, it provides high capacity planting.",
     category: "potato-planters",
     image: "https://images.pexels.com/photos/4553070/pexels-photo-4553070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     specs: {
@@ -238,6 +254,8 @@ export const products = {
     name: "ULTRA 275",
     subtitle_tr: "İki Sıralı Paletli Patates Söküm Makinesi",
     subtitle_en: "Double Rows Pallet Potato Harvester",
+    description_tr: "ULTRA 275, HARDOX kalitesinde bıçaklar ve ısıl işlem görmüş ithal kalite palet ile her toprak tipinde güvenilir hasat sağlayan paletli patates söküm makinesidir. Düşük arıza oranı ve işçilik tasarrufu sunar.",
+    description_en: "The ULTRA 275 is a pallet potato harvester with HARDOX quality blades and heat-treated imported quality pallets, providing reliable harvesting in all soil types. It offers low failure rate and labor savings.",
     category: "potato-harvesters",
     image: "https://images.unsplash.com/photo-1762083558856-b566f9c7b604?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwyfHxwb3RhdG8lMjBoYXJ2ZXN0aW5nJTIwbWFjaGluZSUyMGFncmljdWx0dXJhbCUyMGVxdWlwbWVudHxlbnwwfHx8fDE3NzQ1NjY5ODl8MA&ixlib=rb-4.1.0&q=85",
     specs: {
@@ -267,6 +285,8 @@ export const products = {
     name: "ULTRA 475",
     subtitle_tr: "Dört Sıralı Paletli Patates Söküm Makinesi",
     subtitle_en: "Four Rows Pallet Potato Harvester",
+    description_tr: "ULTRA 475, 4 sıralı yüksek kapasiteli hasat yapabilen güçlü bir paletli patates söküm makinesidir. HARDOX kalitesinde bıçaklar ve geniş çalışma genişliği ile büyük tarlalarda verimli hasat sağlar.",
+    description_en: "The ULTRA 475 is a powerful 4-row pallet potato harvester capable of high capacity harvesting. With HARDOX quality blades and wide working width, it ensures efficient harvesting in large fields.",
     category: "potato-harvesters",
     image: "https://images.unsplash.com/photo-1764160896304-d42018bb091f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxwb3RhdG8lMjBoYXJ2ZXN0aW5nJTIwbWFjaGluZSUyMGFncmljdWx0dXJhbCUyMGVxdWlwbWVudHxlbnwwfHx8fDE3NzQ1NjY5ODl8MA&ixlib=rb-4.1.0&q=85",
     specs: {
@@ -296,6 +316,8 @@ export const products = {
     name: "PSH-2S",
     subtitle_tr: "İki Sıralı Yarım Palet Yarım Elekli Patates Söküm Makinesi",
     subtitle_en: "Double Rows Half Pallet Half Sieve Potato Harvester",
+    description_tr: "PSH-2S, hafif ve taşlı topraklar için uygun, palet ve titreşimli elek ile çift eleme yapan bir patates söküm makinesidir. Kolay kullanımı ve düşük arıza oranı ile öne çıkar.",
+    description_en: "The PSH-2S is a potato harvester suitable for light and stony soil, featuring dual sifting via pallet and vibrating sieve. It stands out with easy operation and low failure rate.",
     category: "potato-harvesters",
     image: "https://images.unsplash.com/photo-1594771804886-a933bb2d609b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwyfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
     specs: {
@@ -324,6 +346,8 @@ export const products = {
     name: "SSM-1400",
     subtitle_tr: "Soğan Söküm Makinesi",
     subtitle_en: "Onion Harvester",
+    description_tr: "SSM-1400, profesyonel soğan hasadı için tasarlanmış verimli ve hızlı bir söküm makinesidir. Dayanıklı yapısı ve kolay bakımı ile uzun yıllar güvenilir performans sunar.",
+    description_en: "The SSM-1400 is an efficient and fast harvester designed for professional onion harvesting. With its durable construction and easy maintenance, it offers reliable performance for years.",
     category: "onion-harvesters",
     image: "https://images.unsplash.com/photo-1594771804886-a933bb2d609b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwyfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
     specs: {
@@ -351,6 +375,38 @@ export const categoryImages = {
   "potato-planters": "https://images.pexels.com/photos/4553070/pexels-photo-4553070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   "potato-harvesters": "https://images.unsplash.com/photo-1762083558856-b566f9c7b604?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwyfHxwb3RhdG8lMjBoYXJ2ZXN0aW5nJTIwbWFjaGluZSUyMGFncmljdWx0dXJhbCUyMGVxdWlwbWVudHxlbnwwfHx8fDE3NzQ1NjY5ODl8MA&ixlib=rb-4.1.0&q=85",
   "onion-harvesters": "https://images.unsplash.com/photo-1594771804886-a933bb2d609b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwyfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
+};
+
+// Machine overlay images for hover effect (like hmsagro)
+export const categoryMachineImages = {
+  "soil-preparation": "https://images.unsplash.com/photo-1643456457241-745a30930c17?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
+  "potato-planters": "https://images.pexels.com/photos/4553070/pexels-photo-4553070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  "potato-harvesters": "https://images.unsplash.com/photo-1762083558856-b566f9c7b604?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwyfHxwb3RhdG8lMjBoYXJ2ZXN0aW5nJTIwbWFjaGluZSUyMGFncmljdWx0dXJhbCUyMGVxdWlwbWVudHxlbnwwfHx8fDE3NzQ1NjY5ODl8MA&ixlib=rb-4.1.0&q=85",
+  "onion-harvesters": "https://images.unsplash.com/photo-1594771804886-a933bb2d609b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwyfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
+};
+
+// Gallery images for product detail pages
+export const productGallery = {
+  "soil-preparation": [
+    "https://images.unsplash.com/photo-1643456457241-745a30930c17?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
+    "https://images.pexels.com/photos/1000057/pexels-photo-1000057.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.pexels.com/photos/1719669/pexels-photo-1719669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  ],
+  "potato-planters": [
+    "https://images.pexels.com/photos/4553070/pexels-photo-4553070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.unsplash.com/photo-1706862609885-7771b001daa2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHw0fHx0cmFjdG9yJTIwZmllbGQlMjBzdW5zZXR8ZW58MHx8fHwxNzc0NTY2ODQ2fDA&ixlib=rb-4.1.0&q=85",
+    "https://images.pexels.com/photos/1000057/pexels-photo-1000057.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  ],
+  "potato-harvesters": [
+    "https://images.unsplash.com/photo-1762083558856-b566f9c7b604?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwyfHxwb3RhdG8lMjBoYXJ2ZXN0aW5nJTIwbWFjaGluZSUyMGFncmljdWx0dXJhbCUyMGVxdWlwbWVudHxlbnwwfHx8fDE3NzQ1NjY5ODl8MA&ixlib=rb-4.1.0&q=85",
+    "https://images.unsplash.com/photo-1764160896304-d42018bb091f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxwb3RhdG8lMjBoYXJ2ZXN0aW5nJTIwbWFjaGluZSUyMGFncmljdWx0dXJhbCUyMGVxdWlwbWVudHxlbnwwfHx8fDE3NzQ1NjY5ODl8MA&ixlib=rb-4.1.0&q=85",
+    "https://images.pexels.com/photos/2255799/pexels-photo-2255799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  ],
+  "onion-harvesters": [
+    "https://images.unsplash.com/photo-1594771804886-a933bb2d609b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwyfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
+    "https://images.pexels.com/photos/1719669/pexels-photo-1719669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.unsplash.com/photo-1706862609885-7771b001daa2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHw0fHx0cmFjdG9yJTIwZmllbGQlMjBzdW5zZXR8ZW58MHx8fHwxNzc0NTY2ODQ2fDA&ixlib=rb-4.1.0&q=85",
+  ],
 };
 
 export const getProductsByCategory = (categoryId) => {

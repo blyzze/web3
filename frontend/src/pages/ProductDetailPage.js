@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useLang } from '../context/LanguageContext';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
-import { products } from '../data/products';
+import { products, productGallery } from '../data/products';
 
 export default function ProductDetailPage() {
   const { lang, t } = useLang();
@@ -19,7 +19,8 @@ export default function ProductDetailPage() {
   }
 
   const specLabels = t.productDetail;
-  const features = lang === 'tr' ? product.features_tr : product.features_en;
+  const gallery = productGallery[product.category] || [];
+  const description = lang === 'tr' ? product.description_tr : product.description_en;
 
   return (
     <div data-testid="product-detail-page" className="pt-20 bg-[#0A0A0A] min-h-screen">
@@ -80,31 +81,6 @@ export default function ProductDetailPage() {
                 </div>
               ))}
             </div>
-          </motion.div>
-
-          {/* Features */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h2 className="font-barlow text-2xl md:text-3xl uppercase tracking-tight font-bold text-white mb-8">
-              {specLabels.features}
-            </h2>
-            <div className="space-y-4">
-              {features.map((feature, i) => (
-                <div
-                  key={i}
-                  data-testid={`feature-${i}`}
-                  className="flex items-start gap-4 p-4 bg-[#141414] border border-zinc-800"
-                >
-                  <div className="w-8 h-8 bg-[#FF6200]/10 border border-[#FF6200]/30 flex items-center justify-center shrink-0">
-                    <span className="text-[#FF6200] text-xs font-bold">{String(i + 1).padStart(2, '0')}</span>
-                  </div>
-                  <p className="text-sm text-zinc-300 font-ibm leading-relaxed">{feature}</p>
-                </div>
-              ))}
-            </div>
 
             {/* CTA */}
             <Link
@@ -114,6 +90,44 @@ export default function ProductDetailPage() {
             >
               {specLabels.getQuote}
             </Link>
+          </motion.div>
+
+          {/* Gallery Photos + Description */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            {/* Photo Gallery */}
+            <div className="grid grid-cols-2 gap-4 mb-8">
+              {/* Large main photo */}
+              <div className="col-span-2 overflow-hidden border border-zinc-800">
+                <img
+                  src={gallery[0]}
+                  alt={`${product.name} - 1`}
+                  data-testid="gallery-img-0"
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              {/* Two smaller photos */}
+              {gallery.slice(1, 3).map((img, i) => (
+                <div key={i} className="overflow-hidden border border-zinc-800">
+                  <img
+                    src={img}
+                    alt={`${product.name} - ${i + 2}`}
+                    data-testid={`gallery-img-${i + 1}`}
+                    className="w-full h-40 object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Short Description */}
+            <div className="bg-[#141414] border border-zinc-800 p-6">
+              <p className="text-base text-zinc-300 font-ibm leading-relaxed" data-testid="product-description">
+                {description}
+              </p>
+            </div>
           </motion.div>
         </div>
       </div>

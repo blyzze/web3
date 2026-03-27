@@ -35,14 +35,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3" data-testid="logo-link">
-            <div className="flex flex-col">
-              <span className="font-barlow text-2xl font-black uppercase tracking-tighter text-white">
-                MESTAR
-              </span>
-              <span className="text-[10px] uppercase tracking-[0.3em] text-[#FF6200] font-semibold">
-                Agricultural Equipment
-              </span>
-            </div>
+            <img
+              src="https://customer-assets.emergentagent.com/job_doc-site-3/artifacts/bk291rdd_image.png"
+              alt="Mestar Logo"
+              className="h-14 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Links */}
