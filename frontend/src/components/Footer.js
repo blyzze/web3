@@ -16,7 +16,7 @@ export default function Footer() {
           <div>
             <div className="mb-6">
               <img
-                src="https://customer-assets.emergentagent.com/job_doc-site-3/artifacts/azl7hyq1_Gemini_Generated_Image_8cvufn8cvufn8cvu.png"
+                src="https://customer-assets.emergentagent.com/job_doc-site-3/artifacts/tydy38wm_Ads%C4%B1z%20tasar%C4%B1m%20%281%29.png"
                 alt="Mestar Logo"
                 className="h-16 w-auto object-contain"
               />
