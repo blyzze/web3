@@ -74,7 +74,7 @@ export default function HeroSlider() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
-                className="font-barlow text-5xl md:text-6xl lg:text-7xl uppercase tracking-tighter font-black text-white mb-8 leading-[0.95]"
+                className="font-barlow text-4xl md:text-5xl lg:text-6xl uppercase tracking-tighter font-black text-white mb-8 leading-[0.95]"
               >
                 {slides[current].title}
               </motion.h1>

@@ -45,9 +45,9 @@ export default function StatsSection() {
 
   const stats = [
     { value: 12, suffix: "+", label: t.stats.products },
-    { value: 10, suffix: "+", label: t.stats.experience },
-    { value: 15, suffix: "+", label: t.stats.countries },
-    { value: 50, suffix: "+", label: t.stats.employees },
+    { value: 50, suffix: "+", label: t.stats.experience },
+    { value: 10, suffix: "+", label: t.stats.countries },
+    { value: 15, suffix: "+", label: t.stats.employees },
   ];
 
   return (

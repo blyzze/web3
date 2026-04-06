@@ -4,7 +4,7 @@ import { useLang } from '../context/LanguageContext';
 import { Menu, X, Globe } from 'lucide-react';
 
 export default function Navbar() {
-  const { lang, toggleLang, t } = useLang();
+  const { lang, cycleLang, t } = useLang();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
@@ -36,7 +36,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3" data-testid="logo-link">
             <img
-              src="https://customer-assets.emergentagent.com/job_doc-site-3/artifacts/bk291rdd_image.png"
+              src="https://customer-assets.emergentagent.com/job_doc-site-3/artifacts/20nkgup4_Gemini_Generated_Image_we15tfwe15tfwe15.png"
               alt="Mestar Logo"
               className="h-14 w-auto object-contain"
             />
@@ -59,12 +59,12 @@ export default function Navbar() {
 
             {/* Language Toggle */}
             <button
-              onClick={toggleLang}
+              onClick={cycleLang}
               data-testid="language-toggle"
               className="flex items-center gap-2 text-sm text-zinc-400 hover:text-[#FF6200] transition-colors"
             >
               <Globe size={16} />
-              <span className="font-semibold">{lang === 'tr' ? 'EN' : 'TR'}</span>
+              <span className="font-semibold">{lang === 'tr' ? 'EN' : lang === 'en' ? 'AR' : 'TR'}</span>
             </button>
 
             {/* CTA */}
@@ -102,11 +102,11 @@ export default function Navbar() {
               </Link>
             ))}
             <button
-              onClick={toggleLang}
+              onClick={cycleLang}
               className="flex items-center gap-2 text-sm text-zinc-400 hover:text-[#FF6200] py-2"
             >
               <Globe size={16} />
-              <span>{lang === 'tr' ? 'English' : 'Türkçe'}</span>
+              <span>{lang === 'tr' ? 'English' : lang === 'en' ? 'العربية' : 'Türkçe'}</span>
             </button>
             <Link
               to="/quote"

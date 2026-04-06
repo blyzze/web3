@@ -57,9 +57,9 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-6">
               {[
                 { value: '12+', label: t.stats.products },
-                { value: '10+', label: t.stats.experience },
-                { value: '15+', label: t.stats.countries },
-                { value: '50+', label: t.stats.employees },
+                { value: '50+', label: t.stats.experience },
+                { value: '10+', label: t.stats.countries },
+                { value: '15+', label: t.stats.employees },
               ].map((stat, i) => (
                 <div key={i} className="bg-[#141414] border border-zinc-800 p-6 text-center">
                   <span className="font-barlow text-3xl font-black text-[#FF6200]">{stat.value}</span>

@@ -57,14 +57,15 @@ export default function ProductsGrid() {
                     alt={cat.name}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 group-hover:from-black/90 group-hover:via-black/50 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 group-hover:from-black/95 group-hover:via-black/70 group-hover:to-black/50 transition-all duration-500" />
 
                   {/* Machine Image - appears on hover (hmsagro style) */}
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
                     <img
                       src={categoryMachineImages[catId]}
                       alt={cat.name}
-                      className="w-4/5 h-3/5 object-contain opacity-0 group-hover:opacity-90 transition-all duration-500 transform translate-y-8 group-hover:translate-y-0 drop-shadow-2xl"
+                      className="w-[75%] max-h-[55%] object-contain opacity-0 group-hover:opacity-100 transition-all duration-700 ease-out transform translate-y-12 group-hover:translate-y-[-10%] drop-shadow-[0_0_30px_rgba(255,98,0,0.3)]"
+                      style={{ filter: 'drop-shadow(0 8px 30px rgba(0,0,0,0.8))' }}
                     />
                   </div>
 

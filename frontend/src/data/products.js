@@ -379,10 +379,10 @@ export const categoryImages = {
 
 // Machine overlay images for hover effect (like hmsagro)
 export const categoryMachineImages = {
-  "soil-preparation": "https://images.unsplash.com/photo-1643456457241-745a30930c17?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
-  "potato-planters": "https://images.pexels.com/photos/4553070/pexels-photo-4553070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-  "potato-harvesters": "https://images.unsplash.com/photo-1762083558856-b566f9c7b604?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwyfHxwb3RhdG8lMjBoYXJ2ZXN0aW5nJTIwbWFjaGluZSUyMGFncmljdWx0dXJhbCUyMGVxdWlwbWVudHxlbnwwfHx8fDE3NzQ1NjY5ODl8MA&ixlib=rb-4.1.0&q=85",
-  "onion-harvesters": "https://images.unsplash.com/photo-1594771804886-a933bb2d609b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwyfHxhZ3JpY3VsdHVyZSUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3NzQ1NjY4NDd8MA&ixlib=rb-4.1.0&q=85",
+  "soil-preparation": "https://customer-assets.emergentagent.com/job_doc-site-3/artifacts/vv0nvh0v_toprak%20hazirlama.png",
+  "potato-planters": "https://customer-assets.emergentagent.com/job_doc-site-3/artifacts/sfasuwx9_ekim%20%283%29.PNG",
+  "potato-harvesters": "https://customer-assets.emergentagent.com/job_doc-site-3/artifacts/1txbafjv_ULTRA475%20SOKUM%20%282%29.png",
+  "onion-harvesters": "https://customer-assets.emergentagent.com/job_doc-site-3/artifacts/1txbafjv_ULTRA475%20SOKUM%20%282%29.png",
 };
 
 // Gallery images for product detail pages
